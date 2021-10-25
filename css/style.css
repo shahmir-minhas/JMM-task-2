@@ -39,6 +39,10 @@ nav li a {
   font-size: 16px;
 }
 
+.flex {
+  display: flex;
+}
+
 .navbar-input {
   width: 420px;
   height: 36px;
@@ -51,6 +55,59 @@ nav li a {
 
 .input-box {
   position: relative;
+}
+
+.search-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 97%;
+  margin-top: 5px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  color: Black;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 0.875rem;
+}
+.search-content p{
+  margin-left: 10px;
+}
+.search-types{
+  margin: 30px 0;
+}
+.search-topics{
+    border: 1px solid grey;
+    height: 35px;
+    border-radius: 5px;
+    color: grey;
+    margin-left: 10px;
+}
+.search-topics a{
+    margin: 10px 10px;
+}
+.img-btn{
+  background: url("../images/photo-grid-4.jpg");
+  height: 35px;
+  width: 35px;
+  background-position: center;
+  
+}
+.search-types span{
+  color: grey;
+  margin-left: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.search-btn {
+  padding: 10px 20px;
+  background: white;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 0px 10px;
+  color: grey;
+  cursor: pointer;
 }
 
 .search-icon {
@@ -203,6 +260,232 @@ nav li a {
   margin: 0.7rem;
 }
 
+.show {
+  display: block;
+}
+
+.btn-menu:hover, .btn-menu:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  float: right;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #ffffff;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 40.625rem;
+}
+.dropdown-content span{
+  margin-right: 10px;
+}
+
+.dropdown-content a {
+  color: grey;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown-content-flex {
+  display: flex;
+  padding: 30px;
+}
+
+.dropdown-content-flex li {
+  margin-left: 15px;
+  clear: left;
+}
+
+/* ------------------------------------Login Model------------------------  */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.login-layout {
+  width: 70%;
+  margin: auto;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login-facebook-btn {
+  padding: 10px 150px;
+  background-color: #5890FF;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.login-submit-btn {
+  padding: 10px 150px;
+  background-color: Black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+#loginModal input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid;
+  margin: 10px 0;
+}
+
+#loginModal input[type=submit] {
+  padding: 10px 150px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+#loginModal label {
+  display: block;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.iconFb {
+  margin-right: 15px;
+}
+
+.login-model-form a {
+  font-size: 12px;
+  text-decoration: underline;
+  color: #909090;
+}
+
+/* ----------------sign up page---------------- */
+.sign-up-flex {
+  display: flex;
+}
+
+.side-img {
+  /* background-image: url("../images/screenimage.jpg"); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(34, 34, 34, 0.5)), url("../images/screenimage.jpg");
+  background-position: bottom;
+  width: 45%;
+  position: relative;
+  padding-top: 240px;
+  flex: 30%;
+}
+
+.side-img-content {
+  color: white;
+  padding: 40px;
+}
+
+.sign-up {
+  text-align: center;
+  flex: 55%;
+  max-width: 75%;
+}
+
+.form-div {
+  width: 80%;
+  margin: auto;
+}
+
+.flex-form {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+}
+
+.flex-form label {
+  display: block;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.flex-form input {
+  width: 96%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid;
+  margin: 10px 0;
+}
+
+.flex-form input[type=submit] {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 10px 0;
+  height: 40px;
+  cursor: pointer;
+}
+
+.user-name {
+  flex: 50%;
+  max-width: 48%;
+}
+
+.justify-Content-around {
+  justify-content: space-around;
+}
+
+/* --------------------------------------------------- */
+/* -----------media query starts here  -------------*/
+/* --------------------------------------------------- */
 @media (max-width: 776px) {
   .image {
     width: 995px;
@@ -269,138 +552,29 @@ nav li a {
     max-width: 31%;
     margin: 0.7rem;
   }
+
+  .sign-up-flex {
+    flex-direction: column;
+  }
+
+  .side-img {
+    width: 100%;
+    height: 30%;
+    padding: 0;
+    background-position: center;
+  }
+
+  .sign-up {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .user-name {
+    flex: 50%;
+    max-width: 48%;
+  }
 }
 
-.show {
-  display: block;
-}
-
-.btn-menu:hover, .btn-menu:focus {
-  background-color: #2980B9;
-}
-
-.dropdown {
-  float: right;
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  right: 0;
-  background-color: #ffffff;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  width: 40.625rem;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content-flex {
-  display: flex;
-  padding: 30px;
-}
-
-.dropdown-content-flex li {
-  margin-left: 0;
-  clear: left;
-}
-
-/* .flex-col{
-  max-width: 5%;
-} */
-/* ------------------------------------Login Model------------------------ */
-.modal {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  padding-top: 60px;
-  /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0);
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 60%;
-  text-align: center;
-  border-radius: 5px;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.login-facebook-btn {
-  padding: 10px 150px;
-  background-color: #5890FF;
-  color: white;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-}
-.login-submit-btn {
-  padding: 10px 150px;
-  background-color: Black;
-  color: white;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  margin: 20px 0;
-}
-#loginModal label{
-  text-align: left;
-
-}
-#loginModal input{
-  width: 43%;
-    height: 30px;
-    border-radius: 5px;
-    border: 1px solid;
-    margin: 10px 0;
-}
-#loginModal input[type=submit]{
-  padding: 10px 150px;
-  background-color: black;
-  color: white;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  margin: 20px 0;
-}
+/* --------------------------------------------------- */
+/* -----------media query ends here  -------------*/
+/* --------------------------------------------------- */

@@ -115,11 +115,6 @@
           </div>
         </li>
         <li>
-          <div class="" style="height:10px; border: 1px solid;">
-
-          </div>
-        </li>
-        <li>
           <div class="top-bar-links">
             <a href="#">3D Renders</a>
           </div>
@@ -190,7 +185,67 @@
             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
           </svg>
         </span>
-        <input type="text" name="" value="" class="unsplash-input" placeholder="Search free High resolution photos">
+        <input type="text" name="" value="" class="unsplash-input" placeholder="Search free High resolution photos" onclick="showSearch()">
+
+
+          <div id="search" class="search-content">
+            <div class="search-types">
+              <p>Recent Searches <span>Clear</span> </p>
+              <button type="button" name="button" class="search-btn">potrait</button>
+              <button type="button" name="button" class="search-btn">arab people</button>
+              <button type="button" name="button" class="search-btn">arab person</button>
+              <button type="button" name="button" class="search-btn">person</button>
+              <button type="button" name="button" class="search-btn">avatar</button>
+            </div>
+            <div class="search-types">
+              <p>Trending Searches</p>
+              <button type="button" name="button" class="search-btn"><i class="bi bi-graph-up-arrow"></i> pumpkin</button>
+              <button type="button" name="button" class="search-btn"><i class="bi bi-graph-up-arrow"></i> psni</button>
+              <button type="button" name="button" class="search-btn"><i class="bi bi-graph-up-arrow"></i> snow</button>
+              <button type="button" name="button" class="search-btn"><i class="bi bi-graph-up-arrow"></i> spin</button>
+              <button type="button" name="button" class="search-btn"><i class="bi bi-graph-up-arrow"></i> instagram</button>
+            </div>
+            <div class="search-types">
+              <p>Trending Topics</p>
+              <div class="flex">
+                <div class="flex search-topics">
+                  <div class="img-btn">
+                  </div>
+                  <a href="#">Nature</a>
+                </div>
+                <div class="flex search-topics">
+                  <div class="img-btn">
+                  </div>
+                  <a href="#">People</a>
+                </div>
+                <div class="flex search-topics">
+                  <div class="img-btn">
+                  </div>
+                  <a href="#">current events</a>
+                </div>
+                <div class="flex search-topics">
+                  <div class="img-btn">
+                  </div>
+                  <a href="#">fashion</a>
+                </div>
+                <div class="flex search-topics">
+                  <div class="img-btn">
+                  </div>
+                  <a href="#">experimental</a>
+                </div>
+              </div>
+            </div>
+            <div class="search-types">
+              <p>Trending Collections</p>
+              <button type="button" name="button" class="search-btn">Olympics</button>
+              <button type="button" name="button" class="search-btn">Tokyo</button>
+              <button type="button" name="button" class="search-btn">wings</button>
+              <button type="button" name="button" class="search-btn">camping</button>
+              <button type="button" name="button" class="search-btn">shadyside</button>
+            </div>
+          </div>
+
+
         <span class="visual-icon unsplash-icon">
           <svg width="26" height="26" viewBox="0 0 32 32" fill="currentColor" version="1.1" aria-hidden="false">
             <path
@@ -266,23 +321,26 @@
   <div id="loginModal" class="modal">
     <div class="modal-content">
       <!-- <span class="close-model">&times;</span> -->
-      <img src="images/logo.png" alt="">
+      <div class="login-layout">
+        <img src="images/logo.png" alt="">
         <h2>Login</h2>
         <p>To submit a photo, login</p>
-        <button type="button" name="button" class="login-facebook-btn"> <i class="bi bi-facebook"></i> Login with Facebook</button>
+        <button type="button" name="button" class="login-facebook-btn"><i class="bi bi-facebook iconFb"></i>Login with Facebook</button>
+        <br>
         <p>OR</p>
-        <form class="" action="index.html" method="post">
+        <form class="login-model-form" action="index.html" method="post">
           <label for="">Email</label>
           <br>
-          <input type="text" name="" value="">
+          <input type="email" name="" value="" required>
           <br>
-          <label for="">Password</label>
+          <label for="">Password <a href="#">Forgot your password?</a> </label>
           <br>
-          <input type="text" name="" value="">
+          <input type="password" name="" value="" required>
           <br>
-          <button type="button" name="button" class="login-submit-btn">Login</button>
+          <button type="submit" name="button" class="login-submit-btn">Login</button>
+          <p>Don't have an account? <a href="sign-up.html">Join</a> </p>
         </form>
-        <p>Don't have an account? <a href="#">Login</a> </p>
+      </div>
     </div>
   </div>
 
